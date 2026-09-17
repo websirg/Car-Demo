@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64" fill="none">
+  <defs>
+    <linearGradient id="favCyan" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00F2FE"/>
+      <stop offset="100%" stop-color="#0891B2"/>
+    </linearGradient>
+  </defs>
+  <rect width="64" height="64" rx="16" fill="#070A12"/>
+  <rect x="1" y="1" width="62" height="62" rx="15" stroke="url(#favCyan)" stroke-width="1.5" stroke-opacity="0.4"/>
+  <!-- Emblem -->
+  <path d="M32 8 L54 18 L46 48 L32 58 L18 48 L10 18 Z" fill="#0B132B" stroke="url(#favCyan)" stroke-width="3" stroke-linejoin="round"/>
+  <path d="M18 24 L32 34 L46 24" stroke="url(#favCyan)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M22 34 L32 41 L42 34" stroke="#00F2FE" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="32" cy="49" r="3" fill="#00F2FE"/>
+</svg>

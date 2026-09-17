@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 280 60" width="280" height="60" fill="none">
+  <defs>
+    <linearGradient id="primaryBlueWhite" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38BDF8"/>
+      <stop offset="100%" stop-color="#06B6D4"/>
+    </linearGradient>
+  </defs>
+  
+  <g transform="translate(6, 6)">
+    <path d="M24 2 L44 10 L38 36 L24 46 L10 36 L4 10 Z" fill="#1E293B" stroke="url(#primaryBlueWhite)" stroke-width="2.5" stroke-linejoin="round"/>
+    <path d="M12 16 L24 24 L36 16" stroke="#38BDF8" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M15 25 L24 31 L33 25" stroke="#06B6D4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" opacity="0.9"/>
+    <circle cx="24" cy="38" r="2.5" fill="#38BDF8"/>
+  </g>
+  
+  <text x="62" y="27" font-family="'Plus Jakarta Sans', 'Inter', -apple-system, sans-serif" font-weight="900" font-size="20" fill="#FFFFFF" letter-spacing="1">WEBSIRG</text>
+  <text x="168" y="27" font-family="'Plus Jakarta Sans', 'Inter', -apple-system, sans-serif" font-weight="800" font-size="20" fill="url(#primaryBlueWhite)" letter-spacing="1">AUTOHUB</text>
+  <text x="63" y="44" font-family="'Inter', sans-serif" font-weight="700" font-size="8" fill="#94A3B8" letter-spacing="0.8">DRIVE BETTER. CHOOSE SMARTER.</text>
+  <circle cx="206" cy="41.5" r="1.5" fill="#38BDF8"/>
+  <text x="212" y="44" font-family="'Inter', sans-serif" font-weight="800" font-size="8" fill="#38BDF8" letter-spacing="0.5">POWERED BY WEBSIRG</text>
+</svg>

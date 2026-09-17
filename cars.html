@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cars & SUVs Showroom | New & Used Inventory | Websirg AutoHub</title>
+  <meta name="description" content="Explore 2026 Hyundai Creta, Maruti Swift, Hyundai Venue HX4, Thar 4x4, Nexon and luxury cars with 120-point certified guarantee and fast loan sanctions.">
+  <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  
+  <!-- Live Fleet & Finance Ticker -->
+  <div class="live-ticker-bar">
+    <div class="container">
+      <div class="live-ticker-content">
+        <span class="ticker-badge">⚡ LIVE FLEET DISPATCH</span>
+        <span class="ticker-text">🟢 <strong>Delivered Today:</strong> 18 Units of 2026 Creta & Swift • 💳 <strong>HDFC & SBI Special Repo Rate:</strong> 8.15% p.a. • 🛵 <strong>Zero Downpayment:</strong> Splendor+ XTEC & Activa 6G • ⚡ <strong>EV Subsidy:</strong> ₹18,000 Direct Benefit on Ola S1 & Ather • 🛡️ <strong>120-Point Guarantee:</strong> Non-Accidental Certificate Included</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Top Executive Advisory Bar -->
+  <div class="top-bar">
+    <div class="container top-bar-content">
+      <div class="top-bar-left">
+        <div class="top-city-picker">
+          <span>📍</span>
+          <select class="top-city-select" id="headerCitySelect" aria-label="Select City">
+            <option>New Delhi NCR</option>
+            <option>Mumbai (BKC)</option>
+            <option>Bengaluru</option>
+            <option>Hyderabad</option>
+            <option>Pune</option>
+            <option>Lucknow</option>
+            <option>Patna</option>
+            <option>Jaipur</option>
+            <option>Ahmedabad</option>
+            <option>Kolkata</option>
+          </select>
+        </div>
+        <span class="bar-divider">|</span>
+        <div class="top-bar-trust">
+          <span class="pulse-dot"></span>
+          <span><strong>Websirg AutoHub:</strong> Multi-Brand Vehicle Advisory & Dealership • 100% Certified Fleet</span>
+        </div>
+      </div>
+      <div class="top-bar-right">
+        <a href="tel:+919876543210" class="top-link-accent">
+          <span>📞 Helpline: <strong>+91 98765 43210</strong></span>
+        </a>
+        <span class="bar-divider">|</span>
+        <a href="https://wa.me/919876543210?text=Hello%20Websirg%20AutoHub%2C%20I%20am%20looking%20for%20a%20vehicle" target="_blank" class="top-whatsapp-link">
+          <span>💬 WhatsApp</span>
+        </a>
+        <span class="bar-divider">|</span>
+        <span style="font-size: 0.8rem; color: #94A3B8;">🕒 9:00 AM – 8:30 PM (All 7 Days)</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main Clean Navbar -->
+  <header class="site-header">
+    <div class="container navbar-container">
+      <a href="index.html" class="brand-logo" title="Websirg AutoHub">
+        <img src="assets/images/logo.svg" alt="Websirg AutoHub" class="brand-logo-img">
+      </a>
+
+      <!-- Navigation Links (Clean, Normal Agency Navigation) -->
+      <nav class="nav-menu" id="navMenu">
+        <div class="mobile-nav-header">
+          <img src="assets/images/logo.svg" alt="Websirg AutoHub" class="mobile-logo">
+          <button class="mobile-nav-close" aria-label="Close menu">&times;</button>
+        </div>
+
+        <ul class="nav-list">
+          <li><a href="index.html" class="nav-link ">Home</a></li>
+          <li><a href="cars.html" class="nav-link active">🚗 Cars & SUVs</a></li>
+          <li><a href="bikes.html" class="nav-link ">🏍️ Bikes & Scooters</a></li>
+          <li><a href="services.html" class="nav-link ">🛠️ Services</a></li>
+          <li><a href="services.html#emiCalculatorSection" class="nav-link ">💰 Loan & EMI</a></li>
+          <li><a href="contact.html" class="nav-link ">Contact Us</a></li>
+        </ul>
+
+        <div class="nav-actions">
+          <a href="services.html#emiCalculatorSection" class="btn-header-emi" title="Calculate Vehicle Loan EMI">
+            <span>💰 EMI Calc</span>
+          </a>
+          <a href="tel:+919876543210" class="btn btn-outline btn-sm">
+            <span>📞 Call</span>
+          </a>
+          <a href="index.html#quotationSection" class="btn btn-primary btn-sm">
+            <span>Get Quote</span>
+          </a>
+        </div>
+      </nav>
+
+      <button class="mobile-nav-toggle" aria-label="Toggle navigation">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+    </div>
+  </header>
+  <div class="mobile-nav-backdrop"></div>
+  
+
+  <main id="mainContent">
+    
+<section class="page-header-clean">
+  <div class="container">
+    <div class="breadcrumb-clean">
+      <a href="index.html">Home</a>
+      <span>/</span>
+      <span>Cars Showroom</span>
+    </div>
+    <h1>Cars Showroom & Inventory (2026 Fleet)</h1>
+    <p class="text-muted">Explore verified 2026 luxury sedans, family SUVs, compact city cars, and electric vehicles with transparent pricing.</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="catalog-layout">
+      <!-- Sidebar Filters -->
+      <aside class="catalog-sidebar-clean">
+        <div class="sidebar-title-row">
+          <h3>Filter Cars</h3>
+          <button type="button" id="resetFiltersBtn" style="color: #0284C7; font-weight: 700; font-size: 0.85rem;">Reset All</button>
+        </div>
+
+        <div class="filter-group-clean">
+          <label class="filter-label-clean" for="catalogSearchInput">Search Car Model</label>
+          <input type="text" id="catalogSearchInput" class="form-control-clean" placeholder="e.g. Creta, Swift, Venue, Thar, Nexon, Brezza, Scorpio...">
+        </div>
+
+        <!-- Model Year Filter -->
+        <div class="filter-group-clean">
+          <label class="filter-label-clean" for="filterYear">Model Year</label>
+          <select id="filterYear" class="form-control-clean">
+            <option value="all">All Model Years</option>
+            <option value="2026">2026 Models</option>
+            <option value="2025">2025 Models</option>
+            <option value="2024">2024 Models</option>
+          </select>
+        </div>
+
+        <div class="filter-group-clean">
+          <label class="filter-label-clean" for="filterCondition">Condition</label>
+          <select id="filterCondition" class="form-control-clean">
+            <option value="all">All Conditions</option>
+            <option value="new">Brand New (Showroom)</option>
+            <option value="used">Certified Pre-Owned</option>
+          </select>
+        </div>
+
+        <div class="filter-group-clean">
+          <label class="filter-label-clean" for="filterFuel">Fuel / Powertrain</label>
+          <select id="filterFuel" class="form-control-clean">
+            <option value="all">All Fuels</option>
+            <option value="petrol">Petrol</option>
+            <option value="electric">Electric (EV)</option>
+            <option value="diesel">Diesel</option>
+            <option value="hybrid">Hybrid</option>
+            <option value="cng">CNG</option>
+          </select>
+        </div>
+
+        <div class="filter-group-clean">
+          <label class="filter-label-clean" for="filterBody">Body Style</label>
+          <select id="filterBody" class="form-control-clean">
+            <option value="all">All Body Types</option>
+            <option value="suv">SUV & 4x4</option>
+            <option value="hatchback">Hatchback</option>
+            <option value="sedan">Luxury Sedan</option>
+          </select>
+        </div>
+
+        <div class="filter-group-clean">
+          <label class="filter-label-clean" for="filterBudget">Budget Filter</label>
+          <select id="filterBudget" class="form-control-clean">
+            <option value="all">Any Budget</option>
+            <option value="under-10l">Under ₹10 Lakh</option>
+            <option value="10l-20l">₹10 Lakh – ₹20 Lakh</option>
+            <option value="above-20l">Above ₹20 Lakh</option>
+          </select>
+        </div>
+      </aside>
+
+      <!-- Main Catalog Content -->
+      <div>
+        <div class="catalog-top-bar">
+          <div>
+            <span style="font-weight: 800; font-size: 1.15rem; color: #0F172A;" id="vehicleCountBadge">10 Verified Cars Available</span>
+          </div>
+          <div style="display: flex; align-items: center; gap: 8px;">
+            <label for="catalogSortSelect" style="font-size: 0.85rem; font-weight: 700; color: #64748B;">Sort By:</label>
+            <select id="catalogSortSelect" class="form-control-clean" style="width: auto; padding: 6px 12px;">
+              <option value="featured">Featured / Best Seller</option>
+              <option value="price-low">Price: Low to High</option>
+              <option value="price-high">Price: High to Low</option>
+              <option value="year-new">Newest Model Year</option>
+            </select>
+          </div>
+        </div>
+
+        <!-- Catalog Grid -->
+        <div class="grid grid-3" id="vehiclesCatalogGrid">
+          <!-- Injected by JavaScript -->
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+  </main>
+
+  
+  <!-- Site Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <!-- Col 1 -->
+        <div>
+          <img src="assets/images/logo-white.svg" alt="Websirg AutoHub" class="footer-logo">
+          <p style="font-size: 0.88rem; line-height: 1.6; margin-bottom: 16px;">
+            India's trusted multi-brand vehicle advisory and dealership. Providing transparent pricing, instant on-road quotations, certified 120-point inspections, low-interest bank financing, and complete RTO facilitation.
+          </p>
+          <div style="font-size: 0.85rem; color: #38BDF8; font-weight: 700;">
+            Powered by Websirg
+          </div>
+        </div>
+
+        <!-- Col 2 -->
+        <div>
+          <h4 class="footer-col-title">Vehicles Inventory</h4>
+          <ul class="footer-links">
+            <li><a href="cars.html">All 10 Cars & SUVs</a></li>
+            <li><a href="cars.html?fuel=electric">Electric Cars (EV)</a></li>
+            <li><a href="bikes.html">All 12 Motorcycles & Scooters</a></li>
+            <li><a href="bikes.html?fuel=electric">Electric Smart Scooters</a></li>
+            <li><a href="bikes.html?style=sports">Cruisers & Sports Bikes</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3 -->
+        <div>
+          <h4 class="footer-col-title">Core Services</h4>
+          <ul class="footer-links">
+            <li><a href="index.html#quotationSection">Instant On-Road Quotations</a></li>
+            <li><a href="services.html#emiCalculatorSection">Vehicle Loans & EMI Calculator</a></li>
+            <li><a href="services.html#exchangeEstimatorSection">Trade-In & Old Vehicle Exchange</a></li>
+            <li><a href="services.html">120-Point Certification Audit</a></li>
+            <li><a href="services.html">Zero-Dep Motor Insurance</a></li>
+            <li><a href="services.html">RTO Transfer & RC Guidance</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 4 -->
+        <div>
+          <h4 class="footer-col-title">Dealership Centers</h4>
+          <p style="font-size: 0.85rem; margin-bottom: 8px;">📍 <strong>Delhi NCR:</strong> Cyber City, Gurugram</p>
+          <p style="font-size: 0.85rem; margin-bottom: 8px;">📍 <strong>Mumbai:</strong> BKC, Bandra Kurla Complex</p>
+          <p style="font-size: 0.85rem; margin-bottom: 12px;">📍 <strong>Bengaluru:</strong> Indiranagar 100ft Rd</p>
+          <p style="font-size: 0.85rem;">📞 <strong>Helpline:</strong> +91 98765 43210</p>
+        </div>
+      </div>
+
+      <!-- Legal Demo Disclaimer Box -->
+      <div class="footer-disclaimer-box">
+        <strong>⚠️ DEMO VEHICLE AGENCY NOTICE:</strong> Websirg AutoHub is a demonstration platform powered by Websirg. All vehicle models, specifications, prices, and brand references are for demonstration and structural presentation purposes only. Websirg AutoHub operates as an independent multi-brand vehicle advisory consultant.
+      </div>
+
+      <!-- Bottom Bar -->
+      <div class="footer-bottom">
+        <div>© 2026 Websirg AutoHub. All Rights Reserved. • Powered by Websirg</div>
+        <div style="display: flex; gap: 16px;">
+          <a href="index.html" style="color: #94A3B8;">Home</a>
+          <a href="cars.html" style="color: #94A3B8;">Cars</a>
+          <a href="bikes.html" style="color: #94A3B8;">Bikes</a>
+          <a href="services.html" style="color: #94A3B8;">Services</a>
+          <a href="services.html#emiCalculatorSection" style="color: #94A3B8;">EMI Calculator</a>
+          <a href="contact.html" style="color: #94A3B8;">Contact Us</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating Contact Buttons (Icon-Only + Animated Wave & Radar Pulse) -->
+  <div class="floating-actions" aria-label="Floating Quick Actions">
+    <a href="https://wa.me/919876543210?text=Hello%20Websirg%20AutoHub,%20I%20need%20vehicle%20assistance." target="_blank" rel="noopener noreferrer" class="float-btn float-whatsapp" title="Chat on WhatsApp" aria-label="WhatsApp">
+      <span class="float-tooltip">Chat on WhatsApp</span>
+      <svg class="float-icon" viewBox="0 0 24 24" width="26" height="26" fill="currentColor" aria-hidden="true">
+        <path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.36 3.45 16.86L2.05 22L7.3 20.62C8.75 21.41 10.38 21.83 12.04 21.83C17.5 21.83 21.95 17.38 21.95 11.92C21.95 9.27 20.92 6.78 19.05 4.91C17.18 3.03 14.69 2 12.04 2M12.05 3.67C14.25 3.67 16.31 4.53 17.87 6.09C19.42 7.65 20.28 9.72 20.28 11.92C20.28 16.46 16.58 20.15 12.04 20.15C10.56 20.15 9.11 19.76 7.85 19L7.55 18.83L4.43 19.65L5.26 16.61L5.06 16.29C4.24 14.99 3.8 13.47 3.8 11.91C3.81 7.37 7.5 3.67 12.05 3.67M9.13 7.5C8.94 7.5 8.63 7.57 8.37 7.85C8.11 8.14 7.37 8.83 7.37 10.23C7.37 11.63 8.39 12.98 8.53 13.17C8.67 13.36 10.5 16.33 13.39 17.46C15.26 18.2 15.82 17.97 16.38 17.92C17.13 17.85 18.2 17.19 18.46 16.46C18.72 15.73 18.72 15.11 18.64 14.98C18.57 14.85 18.38 14.78 18.09 14.64C17.81 14.5 16.43 13.82 16.18 13.73C15.92 13.63 15.74 13.59 15.55 13.87C15.36 14.15 14.83 14.78 14.67 14.97C14.51 15.15 14.35 15.18 14.07 15.04C13.79 14.9 12.89 14.6 11.82 13.65C10.99 12.91 10.42 12 10.26 11.72C10.1 11.44 10.24 11.29 10.38 11.15C10.51 11.02 10.66 10.82 10.8 10.66C10.94 10.5 10.99 10.38 11.08 10.19C11.18 10 11.13 9.84 11.06 9.7C10.99 9.56 10.43 8.19 10.2 7.63C9.97 7.09 9.74 7.16 9.57 7.15C9.41 7.15 9.22 7.15 9.03 7.15L9.13 7.5Z"/>
+      </svg>
+    </a>
+
+    <button type="button" class="float-btn float-call" data-open-modal="call-advisor" title="Call Helpline" aria-label="Call">
+      <span class="float-tooltip">Call Helpline</span>
+      <svg class="float-icon" viewBox="0 0 24 24" width="24" height="24" fill="currentColor" aria-hidden="true">
+        <path d="M20.01 15.38c-1.23 0-2.42-.2-3.53-.56a.977.977 0 00-1.01.24l-2.2 2.2a15.053 15.053 0 01-6.59-6.59l2.2-2.21a.96.96 0 00.25-1A11.36 11.36 0 018.57 3.99c0-.55-.45-1-1-1H4c-.55 0-1 .45-1 1 0 9.39 7.61 17 17 17 .55 0 1-.45 1-1v-3.61c0-.55-.45-1-.99-1z"/>
+      </svg>
+    </button>
+
+    <button type="button" class="float-btn float-testdrive" data-open-modal="test-drive" title="Book Doorstep Test Drive" aria-label="Test Drive">
+      <span class="float-tooltip">Book Test Drive</span>
+      <svg class="float-icon" viewBox="0 0 24 24" width="26" height="26" fill="currentColor" aria-hidden="true">
+        <path d="M18.92 6.01C18.72 5.42 18.16 5 17.5 5h-11c-.66 0-1.21.42-1.42 1.01L3 12v8c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-1h12v1c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-8l-2.08-5.99zM6.5 16c-.83 0-1.5-.67-1.5-1.5S5.67 13 6.5 13s1.5.67 1.5 1.5S7.33 16 6.5 16zm11 0c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5zM5 11l1.5-4.5h11L19 11H5z"/>
+      </svg>
+    </button>
+  </div>
+
+  <button type="button" class="back-to-top" id="backToTop" aria-label="Scroll to top">↑</button>
+
+  <!-- Universal Call Advisor Popup Modal -->
+  <div class="modal-backdrop" id="callAdvisorModal" role="dialog" aria-modal="true">
+    <div class="modal-dialog" style="max-width: 440px;">
+      <div class="modal-header">
+        <h3 class="modal-title">📞 Connect With Vehicle Advisor</h3>
+        <button type="button" class="modal-close-btn" data-close-modal aria-label="Close modal">&times;</button>
+      </div>
+      <div class="modal-body text-center">
+        <div style="width: 58px; height: 58px; background: #E0F2FE; color: #0284C7; border-radius: 50%; display: inline-flex; align-items: center; justify-content: center; margin: 0 auto 14px auto;">
+          <svg viewBox="0 0 24 24" width="28" height="28" fill="currentColor">
+            <path d="M20.01 15.38c-1.23 0-2.42-.2-3.53-.56a.977.977 0 00-1.01.24l-2.2 2.2a15.053 15.053 0 01-6.59-6.59l2.2-2.21a.96.96 0 00.25-1A11.36 11.36 0 018.57 3.99c0-.55-.45-1-1-1H4c-.55 0-1 .45-1 1 0 9.39 7.61 17 17 17 .55 0 1-.45 1-1v-3.61c0-.55-.45-1-.99-1z"/>
+          </svg>
+        </div>
+        <h4 style="font-size: 1.25rem; font-weight: 800; color: #0F172A; margin-bottom: 4px;">Websirg AutoHub Helpline</h4>
+        <p style="font-size: 0.88rem; color: #64748B; margin-bottom: 16px;">Speak directly with certified automotive consultants for on-road quotes, doorstep drives, and instant loan sanction.</p>
+        
+        <div style="background: #F8FAFC; border: 1.5px solid #E2E8F0; border-radius: 12px; padding: 14px; margin-bottom: 16px;">
+          <div style="font-size: 0.78rem; font-weight: 700; color: #64748B; text-transform: uppercase; margin-bottom: 4px;">Advisory Helpline Number</div>
+          <a href="tel:+919876543210" style="font-size: 1.45rem; font-weight: 900; color: #0284C7; text-decoration: none; display: block;">+91 98765 43210</a>
+          <div style="font-size: 0.8rem; color: #10B981; font-weight: 700; margin-top: 4px;">● Specialists Online (9:00 AM – 8:30 PM)</div>
+        </div>
+
+        <div style="display: flex; gap: 10px;">
+          <a href="tel:+919876543210" class="btn btn-primary btn-lg" style="flex: 1; text-decoration: none;">
+            <span>📞 Call Now</span>
+          </a>
+          <a href="https://wa.me/919876543210?text=Hello%20Websirg%20AutoHub,%20please%20connect%20me%20with%20an%20advisor." target="_blank" class="btn btn-whatsapp btn-lg" style="flex: 1; text-decoration: none;">
+            <span>💬 WhatsApp</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Universal Test Drive Modal -->
+  <div class="modal-backdrop" id="testDriveModal" role="dialog" aria-modal="true">
+    <div class="modal-dialog">
+      <div class="modal-header">
+        <h3 class="modal-title">Book 2026 Doorstep Test Drive</h3>
+        <button type="button" class="modal-close-btn" data-close-modal aria-label="Close modal">&times;</button>
+      </div>
+      <div class="modal-body">
+        <p style="font-size: 0.88rem; color: #64748B; margin-bottom: 20px;">
+          Experience your preferred 2026 car or motorcycle at your doorstep with expert guidance and zero obligation.
+        </p>
+        <form data-lead-form>
+          <div style="margin-bottom: 14px;">
+            <label style="display: block; font-size: 0.8rem; font-weight: 700; color: #0F172A; margin-bottom: 4px;">Selected Vehicle / Model</label>
+            <input type="text" id="modalVehicleSelect" class="form-control-clean" placeholder="e.g. 2026 Hyundai Creta, Hero Splendor+, Maruti Swift, Bullet 350..." required>
+          </div>
+          <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-bottom: 14px;">
+            <div>
+              <label style="display: block; font-size: 0.8rem; font-weight: 700; color: #0F172A; margin-bottom: 4px;">Full Name</label>
+              <input type="text" class="form-control-clean" placeholder="Your Name" required>
+            </div>
+            <div>
+              <label style="display: block; font-size: 0.8rem; font-weight: 700; color: #0F172A; margin-bottom: 4px;">Phone Number</label>
+              <input type="tel" class="form-control-clean" placeholder="+91 98765 43210" required>
+            </div>
+          </div>
+          <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-bottom: 14px;">
+            <div>
+              <label style="display: block; font-size: 0.8rem; font-weight: 700; color: #0F172A; margin-bottom: 4px;">City Location</label>
+              <select class="form-control-clean" required>
+                <option value="Delhi NCR">Delhi NCR (Gurugram/Noida)</option>
+                <option value="Mumbai">Mumbai</option>
+                <option value="Bengaluru">Bengaluru</option>
+                <option value="Hyderabad">Hyderabad</option>
+                <option value="Pune">Pune</option>
+                <option value="Other">Other City</option>
+              </select>
+            </div>
+            <div>
+              <label style="display: block; font-size: 0.8rem; font-weight: 700; color: #0F172A; margin-bottom: 4px;">Preferred Date</label>
+              <input type="date" class="form-control-clean" required>
+            </div>
+          </div>
+          <button type="submit" class="btn btn-primary w-100 btn-lg" style="width: 100%; margin-top: 8px;">
+            Confirm Test Drive Booking
+          </button>
+          <p style="font-size: 0.75rem; color: #64748B; text-align: center; margin-top: 10px;">
+            🔒 100% Privacy. Zero spam. An AutoHub Advisor will call you within 30 minutes.
+          </p>
+        </form>
+      </div>
+    </div>
+  </div>
+  
+
+  <script src="assets/js/vehicles-data.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

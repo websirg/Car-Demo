@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 280 60" width="280" height="60" fill="none">
+  <defs>
+    <linearGradient id="primaryBlue" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0284C7"/>
+      <stop offset="100%" stop-color="#06B6D4"/>
+    </linearGradient>
+  </defs>
+  
+  <!-- Emblem: Aerodynamic Automotive Shield / Wing -->
+  <g transform="translate(6, 6)">
+    <!-- Outer Shield Frame -->
+    <path d="M24 2 L44 10 L38 36 L24 46 L10 36 L4 10 Z" fill="#0F172A" stroke="url(#primaryBlue)" stroke-width="2.5" stroke-linejoin="round"/>
+    <!-- Dynamic Inner Speed Lines -->
+    <path d="M12 16 L24 24 L36 16" stroke="#38BDF8" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M15 25 L24 31 L33 25" stroke="#06B6D4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" opacity="0.9"/>
+    <circle cx="24" cy="38" r="2.5" fill="#38BDF8"/>
+  </g>
+  
+  <!-- Typography -->
+  <!-- Brand Name: WEBSIRG -->
+  <text x="62" y="27" font-family="'Plus Jakarta Sans', 'Inter', -apple-system, sans-serif" font-weight="900" font-size="20" fill="#0F172A" letter-spacing="1">WEBSIRG</text>
+  
+  <!-- AutoHub Accent -->
+  <text x="168" y="27" font-family="'Plus Jakarta Sans', 'Inter', -apple-system, sans-serif" font-weight="800" font-size="20" fill="url(#primaryBlue)" letter-spacing="1">AUTOHUB</text>
+  
+  <!-- Subtext: DRIVE BETTER. CHOOSE SMARTER. -->
+  <text x="63" y="44" font-family="'Inter', sans-serif" font-weight="700" font-size="8" fill="#475569" letter-spacing="0.8">DRIVE BETTER. CHOOSE SMARTER.</text>
+  <circle cx="206" cy="41.5" r="1.5" fill="#0284C7"/>
+  <text x="212" y="44" font-family="'Inter', sans-serif" font-weight="800" font-size="8" fill="#0284C7" letter-spacing="0.5">POWERED BY WEBSIRG</text>
+</svg>
