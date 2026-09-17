@@ -7,6 +7,7 @@
 
 document.addEventListener('DOMContentLoaded', () => {
   initNavbar();
+  initMobileFilters();
   initModals();
   initToasts();
   initBackToTop();
@@ -77,6 +78,31 @@ function initNavbar() {
   if (toggle) toggle.addEventListener('click', openMenu);
   if (closeBtn) closeBtn.addEventListener('click', closeMenu);
   if (backdrop) backdrop.addEventListener('click', closeMenu);
+
+  navMenu?.querySelectorAll('a').forEach(link => {
+    link.addEventListener('click', () => {
+      closeMenu();
+    });
+  });
+
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') closeMenu();
+  });
+}
+
+function initMobileFilters() {
+  const filterBtn = document.getElementById('mobileFilterToggle');
+  const sidebar = document.getElementById('catalogSidebar');
+  if (filterBtn && sidebar) {
+    filterBtn.addEventListener('click', () => {
+      sidebar.classList.toggle('mobile-open');
+      filterBtn.classList.toggle('active');
+      const isExpanded = sidebar.classList.contains('mobile-open');
+      filterBtn.setAttribute('aria-expanded', isExpanded);
+      const icon = filterBtn.querySelector('.toggle-icon');
+      if (icon) icon.textContent = isExpanded ? '▲' : '▼';
+    });
+  }
 }
 
 /* ==========================================================================
@@ -769,7 +795,7 @@ function initCompare() {
     const vB = getVehicleById(selectB.value) || VEHICLES_DATA[1];
 
     matrixContainer.innerHTML = `
-      <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin-bottom: 20px;">
+      <div class="form-row-2col" style="gap: 16px; margin-bottom: 20px;">
         <!-- Card A -->
         <div style="background: #F8FAFC; border: 1.5px solid #E2E8F0; border-radius: 12px; padding: 16px; text-align: center;">
           <img src="${vA.image}" alt="${vA.name}" style="width: 100%; height: 170px; object-fit: cover; border-radius: 8px; margin-bottom: 10px;">

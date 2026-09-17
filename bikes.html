@@ -121,9 +121,15 @@
 
 <section class="section">
   <div class="container">
+    <!-- Mobile Filter Toggle Button -->
+    <button type="button" class="mobile-filter-toggle-btn" id="mobileFilterToggle" aria-expanded="false">
+      <span>🔍 Filter Two-Wheelers</span>
+      <span class="toggle-icon">▼</span>
+    </button>
+
     <div class="catalog-layout">
       <!-- Sidebar Filters -->
-      <aside class="catalog-sidebar-clean">
+      <aside class="catalog-sidebar-clean" id="catalogSidebar">
         <div class="sidebar-title-row">
           <h3>Filter Two-Wheelers</h3>
           <button type="button" id="resetFiltersBtn" style="color: #0284C7; font-weight: 700; font-size: 0.85rem;">Reset All</button>
@@ -360,7 +366,7 @@
             <label style="display: block; font-size: 0.8rem; font-weight: 700; color: #0F172A; margin-bottom: 4px;">Selected Vehicle / Model</label>
             <input type="text" id="modalVehicleSelect" class="form-control-clean" placeholder="e.g. 2026 Hyundai Creta, Hero Splendor+, Maruti Swift, Bullet 350..." required>
           </div>
-          <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-bottom: 14px;">
+          <div class="form-row-2col">
             <div>
               <label style="display: block; font-size: 0.8rem; font-weight: 700; color: #0F172A; margin-bottom: 4px;">Full Name</label>
               <input type="text" class="form-control-clean" placeholder="Your Name" required>
@@ -370,7 +376,7 @@
               <input type="tel" class="form-control-clean" placeholder="+91 98765 43210" required>
             </div>
           </div>
-          <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-bottom: 14px;">
+          <div class="form-row-2col">
             <div>
               <label style="display: block; font-size: 0.8rem; font-weight: 700; color: #0F172A; margin-bottom: 4px;">City Location</label>
               <select class="form-control-clean" required>

@@ -139,15 +139,17 @@
         </div>
 
         <!-- Specs Table -->
-        <div style="background: #FFFFFF; border: 1.5px solid var(--border-color); border-radius: 12px; padding: 24px; margin-bottom: 24px; box-shadow: var(--shadow-sm);">
+        <div style="background: #FFFFFF; border: 1.5px solid var(--border-color); border-radius: 12px; padding: 20px; margin-bottom: 24px; box-shadow: var(--shadow-sm);">
           <h2 style="font-size: 1.3rem; margin-bottom: 16px;">Technical Specifications & Verification</h2>
-          <table class="specs-matrix-table" id="detailSpecsTable">
-            <!-- Injected by main.js -->
-          </table>
+          <div class="specs-table-wrapper">
+            <table class="specs-matrix-table" id="detailSpecsTable">
+              <!-- Injected by main.js -->
+            </table>
+          </div>
         </div>
 
         <!-- Features Checklist -->
-        <div style="background: #FFFFFF; border: 1.5px solid var(--border-color); border-radius: 12px; padding: 24px; box-shadow: var(--shadow-sm);">
+        <div style="background: #FFFFFF; border: 1.5px solid var(--border-color); border-radius: 12px; padding: 20px; box-shadow: var(--shadow-sm);">
           <h2 style="font-size: 1.3rem; margin-bottom: 16px;">Key Features & Equipment</h2>
           <ul id="detailFeaturesList" style="list-style: none; padding: 0;">
             <!-- Injected by main.js -->
@@ -341,7 +343,7 @@
             <label style="display: block; font-size: 0.8rem; font-weight: 700; color: #0F172A; margin-bottom: 4px;">Selected Vehicle / Model</label>
             <input type="text" id="modalVehicleSelect" class="form-control-clean" placeholder="e.g. 2026 Hyundai Creta, Hero Splendor+, Maruti Swift, Bullet 350..." required>
           </div>
-          <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-bottom: 14px;">
+          <div class="form-row-2col">
             <div>
               <label style="display: block; font-size: 0.8rem; font-weight: 700; color: #0F172A; margin-bottom: 4px;">Full Name</label>
               <input type="text" class="form-control-clean" placeholder="Your Name" required>
@@ -351,7 +353,7 @@
               <input type="tel" class="form-control-clean" placeholder="+91 98765 43210" required>
             </div>
           </div>
-          <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-bottom: 14px;">
+          <div class="form-row-2col">
             <div>
               <label style="display: block; font-size: 0.8rem; font-weight: 700; color: #0F172A; margin-bottom: 4px;">City Location</label>
               <select class="form-control-clean" required>
